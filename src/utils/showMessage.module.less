@@ -1,0 +1,37 @@
+@import "../styles/mixin.less";
+
+.message{
+    .self-center();
+    z-index: 9999;
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.5);
+    padding: 10px 30px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: .4s;
+    opacity: 0;
+    white-space: nowrap;
+    transform: translate(-50%,-50%) translateY(25px);
+    &-iconjinggao{
+        background: chartreuse;
+    }
+    &-iconiconcorrect{
+        background: chocolate;
+    }
+    &-icongantan{
+        background: cornflowerblue;
+    }
+    &-iconcuowu{
+        background: cyan;
+    }
+}
+.icon{
+    font-size: 25px;
+    margin-right: 4px;
+}
+
+// iconjinggao
+// icongantan
+// iconcuowu
+// iconiconcorrect
